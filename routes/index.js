@@ -36,7 +36,14 @@ router.post('/login', async (ctx, next) => {
         }
     }
 })
-
+router.post('/logout', async (ctx, next) => {
+    let body = ctx.request.body
+    let username = body.username;
+    ctx.body = {
+        code: 200,
+        message: "退出成功"
+    }
+})
 router.post('/register', async (ctx, next) => {
     let body = ctx.request.body
     let username = body.username;
