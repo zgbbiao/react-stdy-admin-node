@@ -13,6 +13,7 @@ const users = require('./routes/users')
 const cors = require('koa2-cors');
 // error handler
 onerror(app)
+global.Gdata = [];
 
 // middlewares
 app.use(bodyparser({
