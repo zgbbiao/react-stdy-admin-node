@@ -42,7 +42,7 @@ router.get('/userslist', function (ctx, next) {
                 total: total,
                 data: res_data,
                 page: ctx_query.page,
-                pageTotal: num
+                pageSize: num
             },
             message: 'page必须大于等于1'
         }
@@ -55,7 +55,7 @@ router.get('/userslist', function (ctx, next) {
                 total: total,
                 data: res_data,
                 page: ctx_query.page,
-                pageTotal: num
+                pageSize: num
             },
             message: 'page必须小于最大页值'
         }
@@ -67,7 +67,7 @@ router.get('/userslist', function (ctx, next) {
             total: total,
             data: res_data,
             page: ctx_query.page,
-            pageTotal: num
+            pageSize: num
         }
     }
 })
